@@ -1,0 +1,16 @@
+/* Selector: body | Property: background-color | Value: #f0f8ff */
+body {
+    background-color: #f0f8ff;
+}
+
+/* Selector: h1 | Property: color | Value: darkblue */
+h1 {
+    color: darkblue;
+    text-align: center;   /* property: text-align | value: center */
+}
+
+/* Selector: .para | Property: font-size | Value: 18px */
+.para {
+    font-size: 18px;
+    color: green;
+}
