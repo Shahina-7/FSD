@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selectors</title>
+
+    <style>
+        {
+            font-family: Arial;
+        }
+        p {
+            color: blue;
+        }
+        #mainTitle {
+            color: darkred;
+            text-align: center;
+        }
+        .highlight {
+            background-color: pink;
+        }
+        h2, h3 {
+            color: green;
+        }
+        div p {
+            font-style: italic;
+        }
+        ul > li {
+            color: brown;
+        }
+        h3 + p {
+            background-color: lightgray;
+        }
+        h4 ~ p {
+            color: purple;
+        }
+        a:hover {
+            color: red;
+        }
+
+        li:first-child {
+            font-weight: bold;
+        }
+        p::first-letter {
+            font-size: 25px;
+            color: red;
+        }
+
+        p::first-line {
+            text-decoration: underline;
+        }
+        input[type="text"] {
+            background-color: lightblue;
+        }
+
+        input[placeholder] {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3 id="mainTitle">CSS Selector Demonstration</h3>
+
+    <h4>Simple Selectors</h4>
+    <p>This paragraph uses element selector.</p>
+    <p class="highlight">This paragraph uses class selector.</p>
+
+    <h4>Combinatory Selectors</h4>
+
+    <div>
+        <p>This paragraph is inside a div (descendant selector).</p>
+    </div>
+
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+    </ul>
+
+    <h4>Adjacent Sibling Example</h4>
+    <p>This paragraph is selected using adjacent sibling selector.</p>
+
+    <h5>General Sibling Example</h5>
+    <p>Paragraph one</p>
+    <p>Paragraph two</p>
+
+    <h4>Pseudo-Class Selector</h4>
+    <a href="#">Hover over this link</a>
+
+    <h4>Pseudo-Element Selector</h4>
+    <p>This paragraph demonstrates pseudo-element selectors.</p>
+
+    <h4>Attribute Selector</h4>
+    <input type="text" placeholder="Enter your name">
+
+</body>
+</html>
