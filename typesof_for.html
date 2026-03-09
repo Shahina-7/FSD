@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loop Example</title>
+</head>
+<body>
+
+<script>
+
+// Object
+const person = {
+  name: "John",
+  age: 22,
+  city: "New York"
+};
+
+// for-in loop (used for objects)
+document.write("Using for-in loop:<br>");
+for (let key in person) {
+  document.write(key + " : " + person[key] + "<br>");
+}
+
+// Array for forEach and for-of
+const fruits = ["Apple", "Mango", "Orange"];
+
+// forEach loop
+document.write("<br>Using forEach loop:<br>");
+fruits.forEach(function(item){
+  document.write(item + "<br>");
+});
+
+// for-of loop
+document.write("<br>Using for-of loop:<br>");
+for (let item of fruits) {
+  document.write(item + "<br>");
+}
+
+</script>
+
+</body>
+</html>
