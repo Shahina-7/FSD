@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Denomination Program</title>
+<script>
+var amount = parseInt(prompt("Enter deposited amount:"));
+
+var hundred = Math.floor(amount / 100);
+amount = amount % 100;
+
+var fifty = Math.floor(amount / 50);
+amount = amount % 50;
+
+var twenty = Math.floor(amount / 20);
+amount = amount % 20;
+
+var ten = Math.floor(amount / 10);
+amount = amount % 10;
+
+var five = Math.floor(amount / 5);
+amount = amount % 5;
+
+var two = Math.floor(amount / 2);
+amount = amount % 2;
+
+var one = amount;
+
+document.write("100's : " + hundred + "<br>");
+document.write("50's : " + fifty + "<br>");
+document.write("20's : " + twenty + "<br>");
+document.write("10's : " + ten + "<br>");
+document.write("5's : " + five + "<br>");
+document.write("2's : " + two + "<br>");
+document.write("1's : " + one + "<br>");
+</script>
+</head>
+
+<body>
+</body>
+</html>

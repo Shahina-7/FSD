@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Armstrong Number</title>
+<script>
+var num = parseInt(prompt("Enter a number:"));
+var temp = num;
+var sum = 0;
+
+while(temp > 0)
+{
+    var digit = temp % 10;
+    sum = sum + (digit * digit * digit);
+    temp = Math.floor(temp / 10);
+}
+
+if(sum == num)
+{
+    alert(num + " is an Armstrong Number");
+}
+else
+{
+    alert(num + " is not an Armstrong Number");
+}
+</script>
+</head>
+
+<body>
+</body>
+</html>
